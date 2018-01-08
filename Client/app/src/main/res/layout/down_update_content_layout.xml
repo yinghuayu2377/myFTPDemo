@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/down_update_content_layout"
+    android:layout_height="match_parent">
+
+    <!--标题-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="18dip"
+        android:textColor="#111111"
+        android:layout_marginLeft="10dp"
+        android:text="标题"
+        android:id="@+id/title_content_down_update"/>
+
+    <!--进度条-->
+    <ProgressBar
+
+        android:id="@+id/pb"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_width="220dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/title_content_down_update"
+        android:max="100" />
+
+    <!--end按钮-->
+    <ImageView
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:src="@drawable/end"
+        android:id="@+id/end"
+        android:layout_below="@id/title_content_down_update"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+
+    <!--start按钮-->
+    <ImageView
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:src="@drawable/start"
+        android:id="@+id/start"
+        android:layout_below="@id/title_content_down_update"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/end"/>
+
+    <!--进度显示-->
+    <TextView
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_below="@id/title_content_down_update"
+        android:layout_marginRight="10dp"
+        android:text="0%"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/start"
+        android:id="@+id/index_content"/>
+
+
+</RelativeLayout>

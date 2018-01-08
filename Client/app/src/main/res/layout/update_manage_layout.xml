@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--顶部工具栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45.0dp"
+        android:id="@+id/top_tool_update"
+        android:background="#aa0000">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/base_action_bar_back_normal"
+            android:id="@+id/return_update"/>
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="45dp"
+            android:id="@+id/select_city_dis"
+            android:layout_toRightOf="@id/return_update"
+            android:background="#aaaaaa"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:text="上传列表"/>
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_update"
+        android:layout_below="@id/top_tool_update"/>
+
+
+</RelativeLayout>
